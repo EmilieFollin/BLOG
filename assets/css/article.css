@@ -1,0 +1,27 @@
+.article{
+
+    border : 5px solid black;
+    border-radius: 0px;
+    margin-top: 20px;
+
+}
+
+.Titre {
+    font-size: 22px;
+    margin: 10px 30px;
+    width: 30%;
+    float: left;
+}
+
+.Contenu {
+    font-size: 12px;
+    width: 50%;
+    height: auto;
+    margin: 10px 50px;
+}
+
+.autre {
+    float: right;
+    margin-right: 30px;
+}
+

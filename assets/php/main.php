@@ -1,5 +1,10 @@
 <?php
     session_start();
+    $_COOKIE['message'] += 1;
+    setcookie('message', $_COOKIE['message']);
+
+echo $_COOKIE['message'];
+
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +12,7 @@
 
 <head>
 
-    <title>Hedi MOKRANI Web développeur Nfactory design site html css </title>
+    <title>design site html css </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -80,15 +85,16 @@
                                 echo ('
                                     <li  style="margin:0px 10px;">
                                         <button class="btn-5 pop-up-button" style="margin: 20px auto; width:100%">New Article</button>
-                                    </li>
+                                    </li>                      
+                                   
                                     
                                     <li  style="margin:0px 10px;">
-                                        <button class="btn-5" style="margin: 20px auto; width:100%">Articles</button>
+                                        <a href="./authentification.php" class="btn-5" style="margin: 20px auto; width:100%">Administrateur</a>
                                     </li>
                                     
 
                                     <li  style="margin:0px 10px;">
-                                        <a href="../../index.php" class="btn-5" style="margin: 20px auto; width:100%"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+                                        <a href="../../index.php" class="btn-5" style="margin: 20px auto; width:100%">Logout</a>
                                     </li>
                                     ');
                             }
@@ -182,14 +188,13 @@
             
                                         
                                         <input class="col-xs-12" name=\'titre\' id="titre" type="text" placeholder="titre">
-                                        <select name="categorie">
-                                            <option value="">Catégorie</option>
-                                            <option value="cuisine">Cuisine</option>
-                                            <option value="musique">Musique</option>
-                                            <option value="porn">Porn</option>
-                                            <option value="cinema">Cinema</option>
-                                            <option value="sport">Sport</option>
-                                        </select>
+                                        <label><input type="checkbox" name="categorie[]" value="cuisine">Cuisine</label>
+                                        <label><input type="checkbox" name="categorie[]" value="sport">Sport</label>
+                                        <label><input type="checkbox" name="categorie[]" value="musique">Musique</label>
+                                        <label><input type="checkbox" name="categorie[]" value="cinema">Cinéma</label> 
+                                        <label><input type="checkbox" name="categorie[]" value="animaux">Animaux</label>
+                                                                                 
+                                   
                                         <textarea class="col-xs-12" name=\'contenu\' id="contenu"> </textarea>
                                       
             
@@ -204,7 +209,7 @@
 
             }
 
-            include_once ('./afficheArticle.php');
+            include_once ('./page.php');
         ?>
 
 

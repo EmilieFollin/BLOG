@@ -17,11 +17,14 @@ if(isset($_POST['titre']) && isset($_POST['contenu'])) {
             'contenu' => $_POST['contenu'],
             'affichage' => 1,
             'statut' => 'redige',
-            'ID_USER' => 1,
+            'ID_USER' => '', //
+
         ));
 
         // On récupère l'id de l'article envoyé
         $articleId = $bdd->lastInsertId();
+
+
 
 
 

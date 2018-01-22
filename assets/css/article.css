@@ -1,9 +1,10 @@
 .article{
-
+    height: 250px;
     border : 5px solid black;
     border-radius: 0px;
     margin-top: 20px;
-
+    overflow: hidden;
+    padding: 30px;
 }
 
 .Titre {
@@ -25,3 +26,31 @@
     margin-right: 30px;
 }
 
+.commenter {
+    position: relative;
+    float: right;
+    right: -150px;
+    top: 30px;
+}
+
+.articleId {
+    font-weight: bold;
+}
+
+.btn-voir {
+    float: right;
+    width: 50px;
+    padding: 10px !important;
+    position: relative;
+    right: -150px;
+    top: 36px;
+}
+
+.btn-cacher {
+    float: right;
+    width: 50px;
+    padding: 10px !important;
+    position: relative;
+    right: -150px;
+    top: 36px;
+}

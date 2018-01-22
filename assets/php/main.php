@@ -3,7 +3,7 @@
     $_COOKIE['message'] += 1;
     setcookie('message', $_COOKIE['message']);
 
-echo $_COOKIE['message'];
+    echo $_COOKIE['message'];
 
 ?>
 
@@ -85,7 +85,11 @@ echo $_COOKIE['message'];
                                 echo ('
                                     <li  style="margin:0px 10px;">
                                         <button class="btn-5 pop-up-button" style="margin: 20px auto; width:100%">New Article</button>
-                                    </li>                      
+                                    </li>  
+                                    
+                                     <li  style="margin:0px 10px;">
+                                        <button class="btn-5"  class="btn-5" style="margin: 20px auto; width:100%">Mes articles</button>
+                                    </li>                    
                                    
                                     
                                     <li  style="margin:0px 10px;">
@@ -205,6 +209,24 @@ echo $_COOKIE['message'];
                             </div>
                         </div>
                 </div>
+                
+                <div class="wrapper-two" style="display:none">
+             
+                       <div class="pop-up-two">
+                           <div class="pop-up-text">
+                               <div class="container-fluid">
+                                   <form class="form-comment" method="POST" action="./comment.php">
+            
+                                        <input type="text" name="articleId" class="article-id">
+                                       <textarea class="col-xs-12" name=\'commentaire\' id="commentaire"> </textarea>
+                                       
+                                       <input class="col-xs-12" id="submit-comment" type="submit" value="COMMENTER">
+            
+                                    </form>
+                                </div>
+                            </div>
+                       </div>
+                </div>
                     ');
 
             }
@@ -239,6 +261,8 @@ echo $_COOKIE['message'];
 
 <!-- INTEGRATION DE POPUP.JS -->
 <script src="../js/popUp.js"></script>
+<script src="../js/comment.js"></script>
+<script src="../js/voir.js"></script>
 
 
 </html>

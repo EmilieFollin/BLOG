@@ -35,9 +35,16 @@ $query->execute();
 
     while ($article = $query->fetch() ){
         echo '<div class="article">';
-        echo '    <div class="Titre"> ' . $article['titre'] . '</div>';
+        echo '    <div class="Titre"> <a class="articleId">#<span>'.$article['idT_ARTICLES'].'</span></a> ' . $article['titre'] . '</div>';
         echo '    <div class="autre">';
         echo 'statut : ' . $article['statut'] . ' auteur : ' . findAuthor($article['idT_ARTICLES'],$bdd) . '<br>' .  '  date : ' . $article['dateHeure'];
+        echo '    </div>';
+        echo '<br>';
+        echo '    <div class="commenter">';
+        echo '         <button class="btn-commenter btn-5 pop-up-button-sign-in">Commenter !</button>';
+        echo '    </div>';
+        echo '    <div class="voir">';
+        echo '         <button class="btn-voir btn-5">+</button>';
         echo '    </div>';
         echo '<br>';
         echo '    <div class="Contenu"> ';
@@ -45,9 +52,6 @@ $query->execute();
         echo '    </div>';
         echo '<br>';
         echo '</div>';
-
-
-
     }
 
 /* Ici on récupère le nombre d'éléments total. Comme c'est une requête, il ne

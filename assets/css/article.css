@@ -1,9 +1,9 @@
 .article{
-    height: 250px;
+    height: auto;
+    min-height: 200px;
     border : 5px solid black;
     border-radius: 0px;
     margin-top: 20px;
-    overflow: hidden;
     padding: 30px;
 }
 
@@ -53,4 +53,8 @@
     position: relative;
     right: -150px;
     top: 36px;
+}
+
+.contenu-inactif {
+    display: none;
 }

@@ -25,3 +25,11 @@
     }
 
     echo ' a revoir';
+
+
+
+if($_SESSION['grade'] != '1'){
+    //accès refusé si pas 'admin'
+    header('Location: ./main.php');
+}
+

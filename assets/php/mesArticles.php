@@ -14,14 +14,14 @@
 
     $debut = ($page - 1) * $limite;
     /* Ne pas oublier d'adapter notre requête */
-    $query = 'SELECT SQL_CALC_FOUND_ROWS * FROM `t_articles` ORDER BY dateHeure DESC LIMIT :limite OFFSET :debut';
+    $query = 'SELECT SQL_CALC_FOUND_ROWS * FROM `t_articles` WHERE ID_USER = '.$_SESSION['userId'].' ORDER BY dateHeure DESC LIMIT :limite OFFSET :debut';
     $query = $cnx->prepare($query);
     $query->bindValue('debut', $debut, PDO::PARAM_INT);
     $query->bindValue('limite', $limite, PDO::PARAM_INT);
     $query->execute();
 
     $bdd = new PDO($_SESSION['host'], $_SESSION['ndcSQL'], $_SESSION['mdpSQL']);
-    $data = $bdd->query('SELECT * FROM t_articles ORDER BY idT_ARTICLES DESC');
+    $data = $bdd->query('SELECT * FROM t_articles WHERE ID_USER = '.$_SESSION['userId'].' ORDER BY idT_ARTICLES DESC');
 
 
     while ($article = $query->fetch() ){
@@ -40,7 +40,7 @@
         echo '    </div>';
         echo '<br>';
         echo '    <div class="Contenu"> ';
-                        contenu($article['contenu'], 70);
+                    contenu($article['contenu'], 70);
         echo '    </div>';
         echo '<br>';
         echo '</div>';
@@ -82,7 +82,7 @@
 
 
 
-                    // FUNCTIONS //
+    // FUNCTIONS //
 
     function findAuthor($idarticle , $db){
         $req = $db -> prepare('SELECT * FROM `t_users`left join t_articles_has_t_users on idT_USERS = t_users_id_user WHERE t_articles_id_article = ?');
@@ -120,3 +120,4 @@
         echo '</span>';
     }
 ?>
+

@@ -124,5 +124,13 @@
         // On ferme la balise <span>
         echo '</span>';
     }
+
+
+    include_once './script.php';
 ?>
+
+
+
+
+
 

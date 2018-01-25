@@ -24,7 +24,7 @@ $(function() {
 
                 });
 
-                $(".zone-articles").html("<img src='http://www.veloclub-chatenay.fr/images/interfaces/chargement.gif'>");
+                $(".zone-articles").html("<img id='chargement' src='https://tuauraslesyeuxcarres.files.wordpress.com/2015/01/arcencielsupersonique.gif'>");
 
 
 
@@ -37,7 +37,7 @@ $(function() {
 
                 });
 
-                $(".zone-articles").html("<img src='http://www.veloclub-chatenay.fr/images/interfaces/chargement.gif'>");
+               // $(".zone-articles").html("<img src='https://tuauraslesyeuxcarres.files.wordpress.com/2015/01/arcencielsupersonique.gif'>");
 
 
                     // PARTIE BUTTON
@@ -49,4 +49,4 @@ $(function() {
 
         })
 
-})
+});

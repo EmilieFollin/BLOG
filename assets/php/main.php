@@ -124,8 +124,7 @@
                            <div class="pop-up-text">
                                <div class="container-fluid">
                                    <form class="form-comment" method="POST" action="./comment.php">
-            
-                                        <input type="text" name="articleId" class="article-id">
+
                                        <textarea class="col-xs-12" name=\'commentaire\' id="commentaire"> </textarea>
                                        
                                        <input class="col-xs-12" id="submit-comment" type="submit" value="COMMENTER">
@@ -145,6 +144,8 @@
                 include_once ('./page.php');
             ?>
         </div>
+
+        <div class="return"></div>
 
 
     </main>
@@ -168,11 +169,9 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<!-- INTEGRATION DE POPUP.JS -->
-<script src="../js/popUp.js"></script>
-<script src="../js/comment.js"></script>
-<script src="../js/voir.js"></script>
-<script src="../js/mesArticles.js"></script>
+<?php
+    include_once './script.php';
+?>
 
 
 </html>

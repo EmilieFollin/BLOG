@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  ven. 19 jan. 2018 à 17:27
+-- Généré le :  jeu. 25 jan. 2018 à 10:33
 -- Version du serveur :  10.1.26-MariaDB
 -- Version de PHP :  7.1.9
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `t_articles` (
   `idT_ARTICLES` int(11) NOT NULL,
-  `titre` varchar(40) DEFAULT NULL,
+  `titre` varchar(140) DEFAULT NULL,
   `contenu` longtext,
   `affichage` tinyint(4) DEFAULT '1',
   `statut` varchar(45) NOT NULL DEFAULT 'post',
@@ -52,7 +52,12 @@ INSERT INTO `t_articles` (`idT_ARTICLES`, `titre`, `contenu`, `affichage`, `stat
 (30, 'Les pompiers interviennent pour un incen', ' Un important dégagement de fumée depuis l\'hôtel Grand Hyatt Martinez à Cannes, actuellement fermé et en plein chantier de rénovation, a alerté les pompiers jeudi soir vers 22 h 10.\r\nSix véhicules anti-incendie se sont rendus sur la Croisette, et les pompiers sont intervenus jusque vers 2 heures du matin dans les cuisines du palace.\r\n\r\nLe bilan des dégâts et l\'origine du foyer restent à déterminer.\r\n\r\n', 1, 'redige', 0, '2018-01-19 14:37:16'),
 (31, 'Un éléphanteau de Sumatra, classé espèce', ' Moins d\'un mois après la mort d\'une éléphante gestante par empoisonnement en Indonésie, un éléphanteau de Sumatra est né dans une forêt protégée d\'Indonésie. L\'agence nationale chargée de la protection des espèces a rapporté l\'événement lundi 15 janvier 2018. L\'éléphant de Sumatra est une espèce protégée, mais la déforestation endémique des plantations a réduit son habitat naturel et l\'a placé en situation de conflit avec les humains. La mère, âgée de 40 ans, était surveillée de près par l\'agence de prévision des naissances dans une forêt de conservation à Riau, sur l\'île de Sumatra.\r\n\r\n\"Un cadeau de conservation\"\r\nLes membres de l\'agence ont exprimé leur joie à l\'arrivée du petit. \"La naissance de l\'éléphant est un cadeau de conservation\", a déclaré l\'agence dans un communiqué. L\'agence indonésienne se veut rassurante, elle ajoute \"L\'éléphanteau est constamment gardé par sa mère et deux autres éléphants adultes.\" La naissance de ce bébé éléphant dans le nord de l\'île de Sumatra était attendue par les agents nationaux, qui surveillaient la mère. Il serait âgé d\'une semaine et son sexe n\'a pas encore été déterminé.', 1, 'redige', 0, '2018-01-19 14:38:26'),
 (32, 'Californie : la légalisation du cannabis', ' 70% des chouettes tachetées du Nord ont été au contact de biocides\r\nEn faisant des analyses sur des cadavres de chouettes trouvés à proximité de ces plantations, les scientifiques ont découvert que 7 chouettes sur 10 avaient été en contact avec des rodenticides. En analysant des échantillons provenant de 84 chouettes rayées (Strix varia), là encore les chercheurs ont trouvé des traces de biocides sur 40% d\'entre elles. Les anticoagulants contenus dans ces produits empêchent l\'organisme des mammifères et des oiseaux de renouveler la vitamine K, composé chimique nécessaire à la coagulation. Ces derniers sont alors susceptibles de mourir d\'une hémorragie interne. Les auteurs de l\'étude pensent que les chouettes tachetées du Nord et les chouettes rayées sont exposées à ces produits de part les proies qu\'elles consomment.\r\n', 1, 'redige', 0, '2018-01-19 14:38:58'),
-(33, 'Belgique : un loup observé pour la premi', ' \"Le premier loup sauvage est arrivé en Flandre !\", a déclaré le 11 janvier 2018 l\'association Landschap sur son site internet. En août 2011, les images d\'un spécimen avaient été captées par des caméras dans les Ardennes belges mais selon l\'hebdomadaire Le Vif, l\'absence de traces ADN ou de nouvelles observations n\'avait pas permis de confirmer la présence du prédateur dans le pays. Ainsi, depuis plus d\'un siècle aucun loup n\'avait été officiellement vu en\r\nSPONSORISE\r\nA partir de 449 € par mois avec un apport de 6 300 €\r\nModèle de base : F-PACE Pure 163ch. Sur 37 mois / 30 000 km. Entretien et garantie inclus\r\n\r\nPROPOSÉ PAR JAGUAR\r\nSuspendre le ciblage publicitaire Adyoulike\r\nBelgique jusqu\'à maintenant. \"Notre pays était le tout dernier sur le continent européen qui n\'avait pas encore été visité par des loups\", écrit l\'association.', 1, 'redige', 0, '2018-01-19 14:39:23');
+(33, 'Belgique : un loup observé pour la premi', ' \"Le premier loup sauvage est arrivé en Flandre !\", a déclaré le 11 janvier 2018 l\'association Landschap sur son site internet. En août 2011, les images d\'un spécimen avaient été captées par des caméras dans les Ardennes belges mais selon l\'hebdomadaire Le Vif, l\'absence de traces ADN ou de nouvelles observations n\'avait pas permis de confirmer la présence du prédateur dans le pays. Ainsi, depuis plus d\'un siècle aucun loup n\'avait été officiellement vu en\r\nSPONSORISE\r\nA partir de 449 € par mois avec un apport de 6 300 €\r\nModèle de base : F-PACE Pure 163ch. Sur 37 mois / 30 000 km. Entretien et garantie inclus\r\n\r\nPROPOSÉ PAR JAGUAR\r\nSuspendre le ciblage publicitaire Adyoulike\r\nBelgique jusqu\'à maintenant. \"Notre pays était le tout dernier sur le continent européen qui n\'avait pas encore été visité par des loups\", écrit l\'association.', 1, 'redige', 0, '2018-01-19 14:39:23'),
+(50, 'Emilie joulie', ' 55222', 1, 'redige', 10, '2018-01-22 12:53:06'),
+(51, 'Alerte au tsunami après un séisme de magnitude 8,1 au large ', ' A 10 h 31, un puissant tremblement de terre a été détecté dans le golfe de l’Alaska, à 249 kilomètres au sud-est de l’île de Kodiak, ont annoncé l’Institut de veille géologique américain (USGS) et les services américains d’alerte au tsunami. Selon l’USGS, l’épicentre se situerait à 10 km de profondeur.\r\nL’alerte au tsunami concerne l’Alaska, mais aussi l’Etat de Colombie-Britannique, au Canada, et l’ensemble de la côte ouest des Etats-Unis, soit les Etats de Washington, de l’Oregon et la Californie.', 1, 'redige', 10, '2018-01-23 11:48:26'),
+(52, 'ACCUEIL  /  MÉTÉO Recevez gratuitement notre newsletter La M', 'Météo France a actualité sa carte des vigilances ce mardi 23 janvier à 10 h. Désormais, 23 départements français sont placés en alerte orange « inondation ». Ils étaient 30 plus tôt ce matin. À Paris, la Seine continue de monter, et plusieurs rivières sont prêtes à sortir de leur lit, en particulier dans l’Est. En montagne, le risque d’avalanches est important, notamment à Chamonix où des mesures de confinement ont été prises.\r\n\r\n Risque d’inondations\r\nLa Seine devrait poursuivre sa crue dans les prochains jours, a averti lundi soir la préfecture de police de Paris, appelant à la « vigilance ».\r\n\r\n« Des inondations importantes sont possibles, y compris dans les zones rarement inondées », « des coupures d’électricité plus ou moins longues » et « des phénomènes de rupture ou de débordement de digues peuvent se produire », a pour sa part mis en garde le service d’informations sur le risque de crues (Vigicrues).\r\n\r\nDans les zones sous vigilance, il est conseillé de se mettre à l’abri, d’éviter les déplacements et de veiller à la protection des biens susceptibles d’être inondés ou emportés.\r\n\r\nLundi matin, les habitants d’Ornans (Doubs) ont été prévenus de la crue de la rivière Loue par une sirène. « La rue principale est inondée, le rez-de-chaussée de la mairie est dans l’eau, on n’avait pas vu une telle crue depuis 2002 », a dit le maire, Sylvain Ducret.\r\n\r\nDes pluies soutenues continuaient de doucher dans l’après-midi une grande partie de la France et vingt-sept autres départements étaient placés en vigilance orange.', 1, 'redige', 10, '2018-01-23 11:50:07'),
+(53, 'Aux Philippines le trafic d\'animaux sauvages passe par Facebook', ' \"Les réseaux sociaux sont le nouvel épicentre des trafics\"\r\n\"Facebook est la plateforme de choix des braconniers aux Philippines à cause de sa popularité et de l\'insuffisance de ses systèmes de surveillance internes\", dit le rapport. \"L\'ampleur du trafic en ligne d\'animaux sauvages dépasse tout simplement l\'entendement\", a commenté Serene Chang, chargée de l\'Asie du Sud-Est de l\'organisation. \"Ce petit instantané montre comment les réseaux sociaux sont le nouvel épicentre du trafic de la faune sauvage\". Les groupes de discussions étudiés par l\'ONG dans lesquels étaient proposés des reptiles vivants avaient plus de 350.000 membres au début de l\'étude. La plupart des transactions étaient réalisées via le service Facebook Messenger, ajoute l\'organisation, qui dit que le trafic continue malgré des opérations régulières des autorités.\r\n\r\nPlus de la moitié des espèces concernées sont protégées au niveau international et par la loi philippine sur la faune sauvage, qui prévoit amendes et peines de prison pour les trafiquants. Des tortues rayonnées, des tortues de Hamilton ou des boas de Duméril en faisaient partie de même que des crocodiles des Philippines et tortues des forêts des Philippines en danger critique. Dans un communiqué, le service communication de Facebook a expliqué que le réseau ne tolérait pas ce genre de trafic, ajoutant qu\'il travaillait avec l\'ONG pour éradiquer le problème. \"Facebook ne permet pas la vente et le trafic d\'animaux en danger et n\'hésitera pas à effacer tout matériel qui violerait les normes de notre communauté lorsqu\'il nous est signalé\".', 1, 'redige', 10, '2018-01-23 11:51:23'),
+(54, 'Epuisés par les tempêtes, plusieurs animaux échouent sur les plages des Landes', ' Depuis le début de l\'année, il n\'est pas rare de voir des animaux s\'échouer les plages des Landes. Ils sont épuisés par les tempêtes à répétition. Il y a eu la tortue découverte le 2 janvier dernier sur la plage de Lespecier à Mimizan, puis le bébé phoque retrouvé sur la plage de Soorts-Hossegor jeudi dernier. D\'ailleurs, Eléanor, en référence à la tempête qui l\'a faite dériver, va mieux. Prise en charge par l\'Aquarium de Biarritz, elle a commencé à s\'alimenter. \r\n\r\nDes oiseaux marins sont aussi victimes de ces très forts coups de vent. Près d\'une trentaine ont déjà été recueillis depuis début janvier à Alca Torda, le centre de soins pour la faune sauvage basé à Pouydesseaux. C\'est plus que l\'hiver dernier, à cause justement des tempêtes successives. \"Ils arrivent sur nos côtes suite aux nombreux  vents et intempéries que l\'on a au large, les oiseaux sont affaiblis et n\'ont pas du tout le temps de se remettre en forme\" explique Baptiste Verdoux, soigneur animalier depuis 3 ans à Alca Torda. \r\n\r\nLe centre de soins de la faune sauvage a recueillis quelques Tordas, des Fous de Bassan et surtout des Guillemots. \"Ils sont très déshydratés, ils ont pour la plupart ingéré du mazout ou en ont sur le plumage\" poursuit le soigneur. Alors, les quatre employés, épaulés par des bénévoles prodiguent des soins pour chaque oiseau : température, taux de déshydratation, risque d\'anémie, etc... pour établir un diagnostic. \r\n\r\nBonne nouvelle, Alca Torda a déjà relâché un macareux, trois Fous de Bassan et un Guillemot devrait retrouver son milieu naturel cette semaine. \r\n\r\nNe pas faire n\'importe quoi face à un oiseau épuisé\r\nSi dans les jours à venir, vous trouvez un oiseau en détresse sur la plage, _\"_il faut le récupérer et le mettre au chaud au plus vite , dans un carton, dans le noir, éviter les bruits et les mouvements trop brusques\" conseille Baptiste Verdoux, sans oublier une source de chaleur \"une bouillotte ou une bouteille d\'eau chaude\". Pour l’attraper, le soigneur préconise une serviette pour calmer l\'oiseau mais aussi éviter les coups de bec, car ces animaux restent sauvages. Une fois l\'oiseau mis au chaud, contacter le centre de soins Alca Torda, qui mettra en place le rapatriement de l\'oiseau à Pouydesseaux par le biais des bénévoles. D\'ailleurs, la structure cherche toujours des bénévoles sur la cote landaise, notamment au Nord entre Biscarrosse et Mimizan. ', 1, 'redige', 10, '2018-01-23 11:51:49');
 
 -- --------------------------------------------------------
 
@@ -71,9 +76,21 @@ CREATE TABLE `t_articles_has_t_users` (
 --
 
 INSERT INTO `t_articles_has_t_users` (`T_ARTICLES_ID_ARTICLE`, `T_USERS_ID_USER`, `T_USERS_T_ROLES_ID_ROLE`) VALUES
-(29, 7, 2),
-(30, 9, 2),
-(31, 12, 2);
+(23, 7, 2),
+(24, 7, 2),
+(25, 8, 2),
+(27, 8, 2),
+(28, 10, 2),
+(29, 10, 2),
+(30, 14, 2),
+(31, 15, 3),
+(32, 17, 3),
+(33, 20, 3),
+(50, 10, 2),
+(51, 10, 2),
+(52, 10, 2),
+(53, 10, 2),
+(54, 10, 2);
 
 -- --------------------------------------------------------
 
@@ -94,7 +111,7 @@ INSERT INTO `t_categories` (`idT_CATEGORIES`, `categorie`) VALUES
 (1, 'sport'),
 (2, 'musique'),
 (3, 'animaux'),
-(4, 'cinéma'),
+(4, 'cinema'),
 (5, 'cuisine');
 
 -- --------------------------------------------------------
@@ -108,6 +125,18 @@ CREATE TABLE `t_categories_has_t_articles` (
   `T_ARTICLES_idT_ARTICLES` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Déchargement des données de la table `t_categories_has_t_articles`
+--
+
+INSERT INTO `t_categories_has_t_articles` (`T_CATEGORIES_idT_CATEGORIES`, `T_ARTICLES_idT_ARTICLES`) VALUES
+(1, 50),
+(2, 50),
+(3, 51),
+(3, 52),
+(3, 53),
+(3, 54);
+
 -- --------------------------------------------------------
 
 --
@@ -118,10 +147,18 @@ CREATE TABLE `t_commentaires` (
   `idT_COMMENTAIRES` int(11) NOT NULL,
   `T_USERS_idT_USERS` int(11) NOT NULL,
   `commentaire` varchar(250) DEFAULT NULL,
-  `date` date DEFAULT NULL,
+  `date` datetime DEFAULT CURRENT_TIMESTAMP,
   `T_ARTICLES_idT_ARTICLES` int(11) NOT NULL,
   `affichage` tinyint(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `t_commentaires`
+--
+
+INSERT INTO `t_commentaires` (`idT_COMMENTAIRES`, `T_USERS_idT_USERS`, `commentaire`, `date`, `T_ARTICLES_idT_ARTICLES`, `affichage`) VALUES
+(5, 10, ' J\'aime les loups c\'est joulie', '2018-01-22 16:25:54', 33, 1),
+(6, 10, ' Super !', '2018-01-23 11:49:05', 51, 1);
 
 -- --------------------------------------------------------
 
@@ -254,7 +291,7 @@ ALTER TABLE `t_users`
 -- AUTO_INCREMENT pour la table `t_articles`
 --
 ALTER TABLE `t_articles`
-  MODIFY `idT_ARTICLES` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `idT_ARTICLES` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT pour la table `t_categories`
@@ -266,7 +303,7 @@ ALTER TABLE `t_categories`
 -- AUTO_INCREMENT pour la table `t_commentaires`
 --
 ALTER TABLE `t_commentaires`
-  MODIFY `idT_COMMENTAIRES` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idT_COMMENTAIRES` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `t_roles`

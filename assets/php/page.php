@@ -1,10 +1,7 @@
 <?php
-    /**
-     * Created by PhpStorm.
-     * User: Admin
-     * Date: 19/01/2018
-     * Time: 14:20
-     */
+
+    if(session_id() == "") session_start();
+
     // Partie "Requête"
     $cnx = new PDO('mysql:host=localhost;dbname=blog2;charset=utf8', 'root', '');
 

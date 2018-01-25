@@ -1,5 +1,7 @@
 <?php
-    session_start();
+
+    if(session_id() == "") session_start();
+
     $_COOKIE['message'] += 1;
     setcookie('message', $_COOKIE['message']);
 
@@ -61,7 +63,7 @@
                                         <input class="col-xs-12" name=\'MDP\' id="PASSWORD" type="text" placeholder="PASSWORD">
             
                                         <input class="col-xs-12" id="submit" type="submit" value="GO!">
-                                        <a href="./oublier.php">Mot de passe oublié ? </a>
+                                        <a href="./reset_pass.php">Mot de passe oublié ? </a>
             
                                     </form>
                                 </div> 
@@ -136,9 +138,14 @@
                     ');
 
             }
-
-            include_once ('./page.php');
         ?>
+
+        <div class="zone-articles">
+            <?php
+                include_once ('./page.php');
+            ?>
+        </div>
+
 
     </main>
 </body>
@@ -159,6 +166,7 @@
 <script src="../js/popUp.js"></script>
 <script src="../js/comment.js"></script>
 <script src="../js/voir.js"></script>
+<script src="../js/mesArticles.js"></script>
 
 
 </html>

@@ -40,7 +40,7 @@
                                     </li>  
                                     
                                      <li  style="margin:0px 10px;">
-                                        <button class="btn-5"  class="btn-5" style="margin: 20px auto; width:100%">Mes articles</button>
+                                        <button class="btn-5 btn-mesarticles" style="margin: 20px auto; width:100%">Mes Articles</button>
                                     </li>                    
                                    
                                     

@@ -1,4 +1,9 @@
 <?php
+
+    if(session_id() == "") session_start();
+
+    sleep(2);
+
     /**
      * Created by PhpStorm.
      * User: Admin

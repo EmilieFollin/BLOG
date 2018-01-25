@@ -40,6 +40,8 @@
                         contenu($article['contenu'], 70);
         echo '    </div>';
         echo '<br>';
+        echo '<div class="fb-share-button" data-href="http://localhost/html-css-js/Projet%20Groupe/Blog%20emilie/BLOG/assets/php/main.php?page=<?php echo $page; ?>"  data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%2Fhtml-css-js%2FProjet%2520Groupe%2FBlog%2520emilie%2FBLOG%2Fassets%2Fphp%2Fmain.php%23&amp;src=sdkpreparse">Partager</a></div>';
+
         echo '</div>';
     }
 

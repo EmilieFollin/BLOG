@@ -5,11 +5,6 @@
       $reponse = $bdd->query('SELECT * FROM t_users');
 
 
-
-
-
-
-
     while($donnees = $reponse->fetch()) {
         if( $_POST['email'] == $donnees['email']) {
             if ($_POST['MDP'] == $donnees['MDP'] ) {
@@ -26,6 +21,6 @@
 
 
 
-header('Location: ./main.php');
+        header('Location: ./main.php');
 ?>
 

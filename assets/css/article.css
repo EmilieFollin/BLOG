@@ -58,3 +58,25 @@
 .contenu-inactif {
     display: none;
 }
+
+#chargement {
+    width: 40%;
+    height: auto;
+
+    border-radius: 50%;
+
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(50%);
+}
+
+.message-success {
+    width: 60%;
+    height: auto;
+
+    position: fixed;
+    z-index: 500;
+    bottom: 50%;
+    left: 20%;
+}
+

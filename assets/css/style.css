@@ -281,8 +281,8 @@ width: 135%;
 
 .pop-up {
   
-  margin: 100px auto;
-  border: 5px solid black;
+  margin: 10px auto;
+  border: 4px solid black;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.75);
   transition: all 0.2s cubic-bezier(0.12, 0.13, 0.14, 0.15);
   position: fixed;
@@ -291,6 +291,7 @@ width: 135%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   z-index: 100;
+    width : 55%;
 
 }
 .pop-up-two {
@@ -402,7 +403,7 @@ color: #cbc6c1;
 
 #form {
 position: relative;
-width: 500px;
+width: 100%;
 margin: 50px auto 100px auto;
 }
 

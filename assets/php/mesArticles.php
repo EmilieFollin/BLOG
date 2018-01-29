@@ -41,7 +41,7 @@
         echo '         <button class="btn-commenter btn-5 pop-up-button-sign-in">Commenter !</button>';
         echo '    </div>';
         echo '    <div class="voir">';
-        echo '         <button class="btn-voir btn-5">+</button>';
+        echo '         <button class="btn-voir btn-5">READ</button>';
         echo '    </div>';
         echo '<br>';
         echo '    <div class="Contenu"> ';

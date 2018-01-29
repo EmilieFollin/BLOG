@@ -1,10 +1,12 @@
 .article{
     height: auto;
     min-height: 200px;
-    border : 5px solid black;
+    box-shadow: 4px 8px 4px -2px rgba(128, 128, 128, 0.19);
     border-radius: 0px;
     margin-top: 20px;
     padding: 30px;
+    float: left;
+    width: 100%;
 }
 
 .Titre {
@@ -19,6 +21,7 @@
     width: 50%;
     height: auto;
     margin: 10px 50px;
+    text-align: justify;
 }
 
 .autre {
@@ -39,11 +42,7 @@
 
 .btn-voir {
     float: right;
-<<<<<<< HEAD
 
-=======
-    width: 50px;
->>>>>>> 3902ff643d19755a4d3569cc896637b010dfe3be
     padding: 10px !important;
     position: relative;
     right: -150px;

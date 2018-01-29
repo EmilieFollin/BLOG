@@ -142,7 +142,7 @@ body {
     font-size: 20px;
 }
 .mainContent h2:before {
-    font-family: 'icomoon';
+    font-family: 'Sans-serif';
     content: attr(data-icon);
     font-weight: normal;
     font-variant: normal;
@@ -245,7 +245,7 @@ body {
     padding: 0;
 }
 .quick-press .save, .quick-press .delet {
-    font-family: 'icomoon';
+    font-family: 'Sans-serif';
     width: 37px;
     background: -webkit-linear-gradient(top,rgb(246,246,240),rgb(232,232,232));
     background: -moz-linear-gradient(top,rgb(246,246,240),rgb(232,232,232));
@@ -345,14 +345,4 @@ body {
     height: 49px;
     line-height: 50px;
     border-left: 1px solid rgb(235,235,235);
-}
-@font-face {
-    font-family: 'icomoon';
-    src:url('fonts/icomoon.eot');
-    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.woff') format('woff'),
-    url('fonts/icomoon.ttf') format('truetype'),
-    url('fonts/icomoon.svg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }

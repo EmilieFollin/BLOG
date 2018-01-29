@@ -24,7 +24,7 @@ if (isset($_POST['submit']))
     }
 */
 
-    if (!$error) {
+    if (!isset($error)) {
 /*
         $query = $mysqli->query("SELECT pseudo FROM t_users WHERE email = '$email' ");
         $r = $mysqli->fetch_object($query);
@@ -62,17 +62,20 @@ if (!empty($error))
 }// close if empty errors
 
 
-if ($rsent == true){
+if (isset($rsent)){
     echo "<p>Just sent an email with your account details to $email</p>
- <a href='./main.php''>Retour début</a>";
+    <a href='./main.php''>Retour début</a>";
 } else {
     echo "<p>Entrer votre email adresse. Vous allez recevoir un nouveau MDP par email.</p>
+
+        <form action=\"\" method=\"post\">
+            <p>Votre email  <input type=\"text\" name=\"email\" size=\"50\" maxlength=\"255\">
+                <input type=\"submit\" name=\"submit\" value=\"Nouveau MDP\"></p>
+        </form>
    ";
 }
 
-?>
 
-<form action="" method="post">
-    <p>Votre email  <input type="text" name="email" size="50" maxlength="255">
-        <input type="submit" name="submit" value="Nouveau MDP"></p>
-</form>
+
+    include_once 'script.php';
+?>

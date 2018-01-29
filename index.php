@@ -20,7 +20,6 @@
 
 
     header('Location: ./assets/php/main.php');
-
-
+    
 ?>
 

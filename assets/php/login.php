@@ -11,11 +11,7 @@
                 $_SESSION['pseudo'] = $donnees['pseudo'];
                 $_SESSION['userId'] = $donnees['idT_USERS'];
                 $_SESSION['login'] = true;
-
-                echo("<script>redirection(\"main.php?page=admin\")</script>");
             }
-        } else {
-            echo("<script>redirection(\"main.php?page=accueil\")</script>");
         }
     }
 

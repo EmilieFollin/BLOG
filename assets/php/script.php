@@ -18,4 +18,5 @@
     <script src="../js/voir.js"></script>
     <script src="../js/mesArticles.js"></script>
     <script src="../js/maildev.js"></script>
+    <script src="../js/adminButton.js"></script>
     ';

@@ -1,25 +1,22 @@
 <?php
 
+    if(session_id() == '') session_start();
+
     $bdd = new PDO($_SESSION['host'], $_SESSION['ndcSQL'], $_SESSION['mdpSQL']);
 
     $statement = 'SELECT * FROM t_articles WHERE ID_USER = '.$_SESSION['userId'].' ORDER BY idT_ARTICLES DESC';
 
     $data = $bdd->query($statement);
 
-
-
-    afficherArticleMiniature($data, false);
+    echo '<div style="position: relative; z-index:10000;">';
+        afficherArticleMiniature($data, false);
+    echo '</div>';
 
 
 ?>
 
 
-    <div class="zone-button">
 
-        <button class="prev-button"><<- PREV</button>
-        <button class="next-button">NEXT ->></button>
-
-    </div>
 
 
 
@@ -64,10 +61,15 @@ function afficherArticleMiniature($data, $auteur = false) {
 
         $i++;
 
+        // ON RECUPERE NOS VALEURS DE POST SI ELLES EXISTENT
+        $limite = isset($_POST['limite']) ? $_POST['limite'] : 6;
+        $debut = isset($_POST['debut']) ? $_POST['debut'] : 1;
+
+
         // AFFICHAGE DU MESSAGE
         echo '<div class="article-miniature ';
             classerCategories($article['idT_ARTICLES']);
-            addClassCacher($i);
+            addClassCacher($i, $debut, $limite, 8);
         echo '">';
         echo '    <div class="Titre">' . $article['titre'] . '</div>';
 
@@ -110,12 +112,22 @@ function statut($statut) {
 
 // ADD CLASS CACHER
 
-function addClassCacher($i) {
-    if($i > 6) {
-        echo ' cacher-article';
-    } else {
+function addClassCacher($i, $debut, $limite, $nombreArticles) {
+
+    if($limite > $nombreArticles) {
+        $limite = $nombreArticles;
+    }
+
+    if($debut <= $i && $i <= $limite) {
         echo ' montrer-article';
+    } else {
+        echo ' cacher-article';
     }
 }
 
 ?>
+
+
+
+
+

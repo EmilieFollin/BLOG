@@ -85,17 +85,6 @@ function statut($statut) {
 }
 
 
-
-// FIND AUTHOR
-
-function findAuthor($idarticle , $db){
-    $req = $db -> prepare('SELECT * FROM `t_users`left join t_articles_has_t_users on idT_USERS = t_users_id_user WHERE t_articles_id_article = ?');
-    $req -> execute([$idarticle]);
-    $row = $req -> fetch();
-    return $row['pseudo'];
-}
-
-
 // CONTENU
 
 function contenu($var, $max) {
@@ -124,6 +113,16 @@ function contenu($var, $max) {
 
     // On ferme la balise <span>
     echo '</span>';
+}
+
+
+// FIND AUTHOR
+
+function findAuthor($idarticle , $db){
+    $req = $db -> prepare('SELECT * FROM `t_users`left join t_articles_has_t_users on idT_USERS = t_users_id_user WHERE t_articles_id_article = ?');
+    $req -> execute([$idarticle]);
+    $row = $req -> fetch();
+    return $row['pseudo'];
 }
 
 

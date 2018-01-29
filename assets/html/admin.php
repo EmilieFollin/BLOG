@@ -41,26 +41,36 @@
             </div>
 
             <div id="mesArticles">
-                <?php include_once '../php/admin/mesArticles.php'; ?>
+                <span id="zone-articles">
+                    <?php include_once '../php/admin/mesArticles.php'; ?>
+                </span>
+
+                <div class="zone-button">
+
+                    <button class="prev-button"><<- PREV</button>
+                    <button class="next-button">NEXT ->></button>
+
+                </div>
+
             </div>
 
-            <div id="commentaires">
+            <div id="commentaires" class="content-admin">
                 <?php include_once '../php/admin/commentaires.php'; ?>
             </div>
 
-            <div id="informations">
+            <div id="informations" class="content-admin">
                 <?php include_once '../php/admin/informations.php'; ?>
             </div>
 
-            <div id="contactAdmin">
+            <div id="contactAdmin" class="content-admin">
                 <?php include_once '../php/admin/contactAdmin.php'; ?>
             </div>
 
-            <div id="messagerie">
+            <div id="messagerie" class="content-admin">
                 <?php include_once '../php/admin/messagerie.php'; ?>
             </div>
 
-             <div id="mdp">
+             <div id="mdp" class="content-admin">
                  <?php include_once '../php/admin/mdp.php'; ?>
             </div>
         </div>
@@ -70,8 +80,19 @@
 
 
 
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript permet d'utiliser les fonctionalité avancer de bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<script src="../js/adminButton.js"></script>
+<script src="../js/adminFullArticle.js"></script>
 <script src="../js/admin.js"></script>
+
 
 
 </body>

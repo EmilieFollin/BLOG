@@ -75,7 +75,7 @@
                                 <div class="container-fluid">
                                     <form id="form" method="POST" action="./login.php">
             
-                                        
+                                        <span class="close thick" id="closePopUpLogin"></span>
                                         <input class="col-xs-12" name=\'email\' id="email" type="text" placeholder="Pseudo ou E-MAIL">
                                         <input class="col-xs-12" name=\'MDP\' id="PASSWORD" type="text" placeholder="PASSWORD">
             
@@ -93,13 +93,13 @@
                            <div class="pop-up-text">
                                <div class="container-fluid">
                                    <form id="form" method="POST" action="./signup.php">
-            
+                                        <span class="close thick" id="closePopUpSignUp"></span>
                                        <input class="col-xs-12" name=pseudo id="pseudo" type="text" placeholder="PSEUDO">
                                        <input class="col-xs-12" name=email id="email" type="text" placeholder="E-MAIL">
                                        <input class="col-xs-12" name=MDP id="PASSWORD" type="text" placeholder="PASSWORD">
                                        <input class="col-xs-12" name=MDP id="PASSWORD" type="text" placeholder="REPEAT PASSWORD">
                                        <input class="col-xs-12" id="submit" type="submit" value="REGISTER">
-                <div class="g-recaptcha" data-sitekey="6LelWkMUAAAAAK_-KcB0E78GzQcOTs78_RtbvHyt"></div>
+                                        <div class="g-recaptcha"  style="width: 304px; height: 0px"; " data-sitekey="6LelWkMUAAAAAK_-KcB0E78GzQcOTs78_RtbvHyt"></div>
                                     </form>
                                 </div>
                             </div>

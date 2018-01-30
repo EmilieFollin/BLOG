@@ -4,7 +4,7 @@
 
 
 
-    // La fonction captcha doit etre avant la verification 
+    // La fonction captcha doit etre avant la verification
 // Ma clé privée
 $secret = "6LelWkMUAAAAAJpR7J1cEWSJ-HDcVCWE7QVlSJHJ";
 // Paramètre renvoyé par le recaptcha
@@ -58,7 +58,7 @@ else {
 
 
 
-   // header('Location: ./main.php');
+    header('Location: ./main.php');
 
 
 

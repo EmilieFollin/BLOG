@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="alternate" type="application/rss+xml" title="Mon flux RSS" href="http://localhost/html-css-js/Projet%20Groupe/Blog%20emilie/BLOG/assets/php/flux_rss.xml" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
 
 
@@ -98,7 +99,7 @@
                                        <input class="col-xs-12" name=MDP id="PASSWORD" type="text" placeholder="PASSWORD">
                                        <input class="col-xs-12" name=MDP id="PASSWORD" type="text" placeholder="REPEAT PASSWORD">
                                        <input class="col-xs-12" id="submit" type="submit" value="REGISTER">
-            
+                <div class="g-recaptcha" data-sitekey="6LelWkMUAAAAAK_-KcB0E78GzQcOTs78_RtbvHyt"></div>
                                     </form>
                                 </div>
                             </div>

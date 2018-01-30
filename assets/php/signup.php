@@ -4,10 +4,33 @@
 
 
 
+    // La fonction captcha doit etre avant la verification 
+// Ma clé privée
+$secret = "6LelWkMUAAAAAJpR7J1cEWSJ-HDcVCWE7QVlSJHJ";
+// Paramètre renvoyé par le recaptcha
+$response = $_POST['g-recaptcha-response'];
+// On récupère l'IP de l'utilisateur
+$remoteip = $_SERVER['REMOTE_ADDR'];
+
+$api_url = "https://www.google.com/recaptcha/api/siteverify?secret="
+    . $secret
+    . "&response=" . $response
+    . "&remoteip=" . $remoteip ;
+
+$decode = json_decode(file_get_contents($api_url), true);
+
+if ($decode['success'] == true) {
+    echo 'Cest un humain';
+}
+
+else {
+    echo 'Cest un robot ou le code de vérification est incorrecte';
+}
+
     
     if(isset($_POST['email']) && isset($_POST['pseudo']) && isset($_POST['MDP'])) {
 
-        if(!testExist('email') && !testExist('pseudo')) {
+        if(!testExist('email') && !testExist('pseudo') && $decode['success'] == true) {
             $email = $_POST['email'];
 
             if (filter_var($email,  FILTER_VALIDATE_EMAIL)) {
@@ -35,7 +58,11 @@
 
 
 
-    header('Location: ./main.php');
+   // header('Location: ./main.php');
+
+
+
+
 
 
 

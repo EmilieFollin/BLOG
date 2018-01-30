@@ -4,6 +4,10 @@
             <a id="titre" href="#">
                 Blog
             </a>
+            <a href="http://localhost/html-css-js/Projet%20Groupe/Blog%20emilie/BLOG/assets/php/flux_rss.xml">
+                <img src="http://www.craym.eu/images/template/rss_mini.png" alt="Flux RSS" border="0" />
+
+            </a>
         </div>
         <ul class="nav navbar-nav">
 

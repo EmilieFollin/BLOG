@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="alternate" type="application/rss+xml" title="Mon flux RSS" href="http://localhost/html-css-js/Projet%20Groupe/Blog%20emilie/BLOG/assets/php/flux_rss.xml" />
 
 
 

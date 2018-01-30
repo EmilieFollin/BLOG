@@ -2,12 +2,53 @@ $(function() {
 
 
     $('.btn-voir').click(function() {
-            // LE SPAN
+
+
+        // TRAITEMENT DES DONNEES
+
+
+        // LE SPAN
+
         // On va chercher notre <span>
         $span = $(this).parent().parent().children('.Contenu').children('span');
 
         // On Affiche/Efface $span
         $span.toggle('slow', "swing");
+
+
+
+        /*      ***************       */
+
+
+
+        // ZONE-COMMENT
+
+        // On va chercher notre div zone-comment
+        $zoneComment = $(this).parent().parent().children('.zone-comment');
+
+        // On Affiche/Cache notre $zoneComment
+        $zoneComment.toggle('slow');
+
+
+
+        /*      ***************       */
+
+
+
+
+        // On récupère l'id de notre article
+        articleId = $(this).parent().parent().children('.Titre').children('.articleId').children('span').text();
+
+
+
+        // /////////////////////////////////////// //
+        //     GESTION AJAX SOUS-ZONE-COMMENT      //
+        // /////////////////////////////////////// //
+
+        $(".sous-zone-comment").load("../php/afficheComment.php", { // accolades !
+            articleId : articleId
+        });
+
     })
 
 

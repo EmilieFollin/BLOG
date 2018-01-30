@@ -26,6 +26,10 @@ function afficherArticle($data) {
         echo '    <div class="voir">';
         echo '         <button class="btn-voir btn-5">+</button>';
         echo '    </div>';
+        echo '    <div class="zone-comment">';
+        echo '          <h3>COMMENTAIRES</h3>';
+        echo '          <div class="sous-zone-comment"></div>';
+        echo '    </div>';
         echo '<br>';
         echo '    <div class="Contenu"> ';
         contenu($article['contenu'], 70);

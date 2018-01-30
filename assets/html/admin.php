@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/articleMiniature.css">
+    <link rel="stylesheet" href="../css/comment.css">
 
 
 
@@ -90,7 +91,6 @@
         crossorigin="anonymous"></script>
 
 <script src="../js/adminButton.js"></script>
-<script src="../js/adminFullArticle.js"></script>
 <script src="../js/admin.js"></script>
 
 

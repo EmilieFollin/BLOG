@@ -83,3 +83,36 @@
     left: 20%;
 }
 
+
+.zone-comment {
+    display: none;
+    position: relative;
+    -webkit-transform: translateY(50%) translateX(-10%);
+
+    width: 30%;
+    height: auto;
+    border: 2px solid black;
+    float: right;
+    text-align: center;
+}
+
+.comment-content {
+    width: 100%;
+    height: auto;
+    background-color: #3A3A3A;
+    color: white;
+    padding: 5px 20px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.comment-user {
+    float: left;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.commentaire:hover {
+    text-decoration: none;
+    opacity: 1;
+}

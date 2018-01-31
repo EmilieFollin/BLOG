@@ -75,8 +75,7 @@ if(!$_SESSION['login']) {
                            <div class="pop-up-text">
                                <div class="container-fluid">
                                    <form class="form-comment" method="POST" action="./comment.php">
-            
-                                        <input type="text" name="articleId" class="article-id">
+
                                        <textarea class="col-xs-12" name=\'commentaire\' id="commentaire"> </textarea>
                                        
                                        <input class="col-xs-12 submit" id="submit-comment" type="submit" value="COMMENTER">

@@ -29,3 +29,6 @@
 ?>
 
 
+<script src="../js/btnDelet.js"></script>
+
+

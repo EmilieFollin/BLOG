@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/articleMiniature.css">
     <link rel="stylesheet" href="../css/comment.css">
+    <link rel="stylesheet" href="../css/modifArticle.css">
 
 
 

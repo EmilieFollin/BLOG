@@ -19,4 +19,6 @@
     <script src="../js/mesArticles.js"></script>
     <script src="../js/maildev.js"></script>
     <script src="../js/adminButton.js"></script>
+    <script src="../js/likes.js"></script>
+    
     ';

@@ -61,30 +61,9 @@
 </nav>
 
 
-
-
-<div class="tag col-xs-12">
-    <ul>
-        <a href="">
-            <li class="col-sm-2 col-xs-12 ">TRENDING</li>
-        </a>
-        <a href="">
-            <li class="col-sm-2 col-xs-12 ">FOOD</li>
-        </a>
-        <a href="">
-            <li class="col-sm-2 col-xs-12 ">MONEY</li>
-        </a>
-        <a href="">
-            <li class="col-sm-2 col-xs-12">FUN</li>
-        </a>
-        <a href="">
-            <li class="col-sm-2 col-xs-12">TECHNOLOGY</li>
-        </a>
-        <a href="">
-            <li class="col-sm-2 col-xs-12">TRAVEL</li>
-        </a>
-    </ul>
-</div>
+<?php
+    include_once '../html/categoriesBarre.php';
+?>
 
 
 

@@ -71,6 +71,8 @@
             <?php
                 include_once ('./afficheAllArticles.php');
             ?>
+
+            <div class="zone-error"></div>
         </div>
 
 

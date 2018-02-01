@@ -13,10 +13,8 @@ function afficherArticle($data) {
 
        if($article['statut'] == 'redige') {
 
-
-
            // AFFICHAGE DU MESSAGE
-           echo '<div class="article ';
+           echo '<div class="article show';
                 classerCategories($article['idT_ARTICLES']);
            echo '">';
            echo '    <div class="Titre"> <a class="articleId">#<span>'.$article['idT_ARTICLES'].'</span></a> ' . $article['titre'] . '</div>';
@@ -268,4 +266,5 @@ function dataCount($articleId) {
     return $i;
 
 }
+
 ?>

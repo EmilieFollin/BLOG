@@ -28,6 +28,7 @@ $(function () {
         } else {
             $(this).attr('data-count', count - 1);
             $(this).removeClass('liked');
+            $(this).removeClass('notify');
 
             // RECUPERATION DES DONNEES
             articleId = $(this).parent().parent().children('.Titre').children('.articleId').children('span').text();

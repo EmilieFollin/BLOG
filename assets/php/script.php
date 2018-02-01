@@ -20,5 +20,6 @@
     <script src="../js/maildev.js"></script>
     <script src="../js/adminButton.js"></script>
     <script src="../js/likes.js"></script>
+    <script src="../js/triCategorie.js"></script>
     
     ';

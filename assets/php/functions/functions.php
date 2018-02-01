@@ -13,9 +13,11 @@ function afficherArticle($data) {
 
        if($article['statut'] == 'redige') {
 
+
+
            // AFFICHAGE DU MESSAGE
            echo '<div class="article ';
-           classerCategories($article['idT_ARTICLES']);
+                classerCategories($article['idT_ARTICLES']);
            echo '">';
            echo '    <div class="Titre"> <a class="articleId">#<span>'.$article['idT_ARTICLES'].'</span></a> ' . $article['titre'] . '</div>';
            echo '    <div class="autre">';
@@ -29,10 +31,7 @@ function afficherArticle($data) {
            echo '         <button class="btn-voir btn-5">+</button>';
            echo '    </div>';
 
-           echo '    <div class="container">
-                        <div class="notification show-count"></div>
-                        <div class="trash"></div>
-                    </div>';
+                        notifications($article['idT_ARTICLES']);
 
            echo '    <div class="zone-comment">';
            echo '          <h3>COMMENTAIRES</h3>';
@@ -196,4 +195,77 @@ function classerCategories($articleId) {
 
 }
 
+
+
+
+
+
+
+
+// NOTIFICATIONS()
+
+function notifications($articleId) {
+
+    if ($_SESSION['userId'] != '') {
+        echo '    <div class="container">
+                        <div class="notification show-count';
+
+                classerLiked($articleId);
+
+        echo            '" data-count="'.dataCount($articleId).'"></div>
+                        <div class="trash"></div>
+                    </div>';
+    } /*
+ else {
+        echo '    <div class="container">
+                        <div class="notification show-count';
+
+        echo            '" data-count="'.dataCount($articleId).'"></div>
+                        <div class="trash"></div>
+                    </div>';
+
+    }
+*/
+}
+
+
+// Classer Liked
+
+function classerLiked($articleId) {
+    $bdd = new PDO($_SESSION['host'], $_SESSION['ndcSQL'], $_SESSION['mdpSQL']);
+
+    $statementLiked = '
+                        SELECT *
+                        FROM t_likes
+                        WHERE ID_USER ='. $_SESSION['userId'].' && ID_ARTICLE = ' . $articleId . '
+                    ';
+
+    $requeteLiked = $bdd->query($statementLiked);
+
+    if($requeteLiked->fetch()) {
+        echo ' liked';
+    }
+
+}
+
+
+
+// Data Count
+
+function dataCount($articleId) {
+    $bdd = new PDO($_SESSION['host'], $_SESSION['ndcSQL'], $_SESSION['mdpSQL']);
+
+    $statementCount = ' SELECT * FROM t_likes WHERE ID_ARTICLE = '. $articleId;
+
+    $reqCount = $bdd->query($statementCount);
+
+    $i = 0;
+
+    while($likes = $reqCount->fetch()) {
+        $i++;
+    }
+
+    return $i;
+
+}
 ?>

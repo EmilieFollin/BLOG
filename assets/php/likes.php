@@ -5,11 +5,20 @@
 
     // RECUPERATION DES INFORMATIONS
     $articleId = $_POST['articleId'];
+    $liked = $_POST['liked'];
 
-    $req = $bdd->prepare('INSERT INTO t_likes(ID_USER,ID_ARTICLE) VALUES(:id_user, :id_article)');
-    $req->execute(array(
+    if($liked == 'true') {
+        $req = $bdd->prepare('INSERT INTO t_likes(ID_USER,ID_ARTICLE) VALUES(:id_user, :id_article)');
+        $req->execute(array(
 
-        'id_user' => $_SESSION['userId'],
-        'id_article' => $articleId,
+            'id_user' => $_SESSION['userId'],
+            'id_article' => $articleId,
 
-    ));
+        ));
+
+    } else {
+        $statement = 'DELETE FROM t_likes WHERE ID_ARTICLE = ' . $articleId;
+
+        $req = $bdd->query($statement);
+    }
+

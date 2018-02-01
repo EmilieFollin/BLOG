@@ -1,8 +1,12 @@
-<nav class="navbar">
+<nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="#">
-                <img style="width: 100px;" src="http://www.free-icons-download.net/images/factory-logo-icon-84733.png" alt="logo factory blog">
+            <a id="titre" href="#">
+                Blog
+            </a>
+            <a href="http://localhost/html-css-js/Projet%20Groupe/Blog%20emilie/BLOG/assets/php/flux_rss.xml">
+                <img src="http://www.craym.eu/images/template/rss_mini.png" alt="Flux RSS" border="0" />
+
             </a>
         </div>
         <ul class="nav navbar-nav">
@@ -20,37 +24,37 @@
                                     
                                     <li style="margin:0px 10px;">
                                         <div class="button">
-                                            <button class="button btn-5 pop-up-button-sign-in" style="margin: 20px auto; width:100%">Sign Up</button>
+                                            <button class="button btn-5 pop-up-button-sign-in" style="margin: 10px auto; width:100%">Sign Up</button>
                                         </div>
                                     </li>
                                     
                                     <li  style="margin:0px 10px;">
-                                        <button class="btn-5" style="margin: 20px auto; width:100%">Articles</button>
+                                        <button class="btn-5" style="margin: 10px auto; width:100%">Articles</button>
                                     </li>
                                     
                                     
                                     <li  style="margin:0px 10px;">
-                                        <button class="btn-5 pop-up-button" style="margin: 20px auto; width:100%">login</button>
+                                        <button class="btn-5 pop-up-button" style="margin: 10px auto; width:100%">login</button>
                                     </li>'
                 );
             } else {
                 echo ('
                                     <li  style="margin:0px 10px;">
-                                        <button class="btn-5 pop-up-button" style="margin: 20px auto; width:100%">New Article</button>
+                                        <button class="btn-5 pop-up-button" style="margin: 10px auto; width:100%">New Article</button>
                                     </li>  
                                     
                                      <li  style="margin:0px 10px;">
-                                        <button class="btn-5 btn-mesarticles" style="margin: 20px auto; width:100%">Mes Articles</button>
+                                        <button class="btn-5 btn-mesarticles" style="margin: 10px auto; width:100%">Mes Articles</button>
                                     </li>                    
                                    
                                     
                                     <li  style="margin:0px 10px;">
-                                        <a href="../html/admin.php#menuPrincipal" class="btn-5" style="margin: 20px auto; width:100%">Administrateur</a>
+                                     <button class="btn-5">    <a href="../html/admin.php#menuPrincipal" class="btn-5" style="margin: 10px auto; width:100%">Administrateur</a></button>
                                     </li>
                                     
 
                                     <li  style="margin:0px 10px;">
-                                        <a href="../../index.php" class="btn-5" style="margin: 20px auto; width:100%">Logout</a>
+                                      <button class="btn-5">   <a href="../../index.php" class="btn-5" style="margin: 10px auto; width:100%">Logout</a></button>
                                     </li>
                                     ');
             }
